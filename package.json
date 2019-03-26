@@ -1,0 +1,25 @@
+{
+  "name": "mkdocs",
+  "version": "1.0.0",
+  "description": "For full documentation visit [mkdocs.org](https://www.mkdocs.org).",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "npm run genDataSource && mkdocs build --clean",
+    "deploy": "npm run genDataSource && mkdocs gh-deploy --clean",
+    "start": "mkdocs serve",
+    "genDataSource": "cd app && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wf225/mkdocs.git"
+  },
+  "author": "Bill Wu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wf225/mkdocs/issues"
+  },
+  "homepage": "https://github.com/wf225/mkdocs#readme"
+}
